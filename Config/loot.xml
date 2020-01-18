@@ -1,0 +1,99 @@
+<Khelldon>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Starts Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
+<!--
+Khelldon - Let's add the random starter loot and the container info to call to it.
+-->
+<append xpath="/lootcontainers">
+
+	<!-- Survival Crate groups -->
+<lootgroup name="Survival Shirts">
+	<item group="shirtLongAll" />
+	<item group="sweatshirtAll" />
+	<item group="hoodedSweatshirtAll" />
+	<item group="tankTopAll" />
+	<item group="tshirtAll" />
+	<item group="flannelShirtAll"/>
+</lootgroup>
+
+<lootgroup name="Survival Bow" count="all">
+	<item name="gunWoodenBow" prob="0.8" />
+	<item name="gunCompoundBow" prob="0.1" />
+	<item name="ammoArrowStone" count="20,30" prob="0.5" />
+	<item name="ammoArrowIron" count="20,30" prob="0.1" />
+</lootgroup>
+ 
+<lootgroup name="Survival Pistol" count="all">
+	<item name="gunPistol" count="1" />
+	<item name="ammo9mmBullet" count="10,15" />
+</lootgroup>
+ 
+<lootgroup name="Survival Range" count="1">
+	<item group="Survival Pistol" prob="0.2" />
+	<item group="weaponsCrossbow+ammo" prob="0.3" />
+	<item group="Survival Bow" prob="0.5"/>
+</lootgroup>
+
+<lootgroup name="Survival Tools" >
+	<item name="meleeToolPickaxeIron" prob=".1"/>
+	<item name="meleeToolShovelIron" prob=".1"/>
+	<item name="meleeToolFireaxeIron" prob=".1"/>
+	<item name="meleeToolClawHammer" prob=".1"/>
+	<item name="meleeToolWrench" prob=".1"/>
+	<item group="empty" prob=".5"/>
+</lootgroup>
+   
+<lootgroup name="Survival Pants" >
+	<item group="pantsAll" prob=".3"/>
+	<item name="plantFiberPants" prob=".7"/>
+</lootgroup>
+
+<lootgroup name="Survival Vehicle">
+	<item name="ammoGasCan" count="25,100"/>
+	<item name="vehicleBicyclePlaceable" prob=".4"/>
+	<item name="vehicleMinibikePlaceable" prob=".3"/>
+	<item name="vehicleMotorcyclePlaceable" prob=".2"/>
+	<item name="vehicle4x4TruckPlaceable" prob=".1"/>
+	<item group="empty" prob=".7"/>
+</lootgroup>
+	
+<!-- Our list of loot to give the player -->
+<lootgroup name="khelldonStarterCrateContents" count="all">
+	<item name="armorMiningHelmet" prob=".1"/>
+	<item group="weaponsMelee" count="1"/>
+	<item group="Survival Range" />
+	<item group="Survival Tools" count="1" />
+	<item group="hats" />
+	<item group="Survival Shirts" />
+	<item group="Survival Pants" />
+	<item name="wornBoots" />
+	<item group="Armor" count="4"/>
+	<item group="Survival Vehicle" />
+	<item group="airdropMedicine" count="2"/>
+	<item group="cannedfood" count="2"/>
+</lootgroup>
+
+<!-- The loot id we need to call to get our loot group. 
+This may certainly cause conflicts with other mods. -->
+<lootcontainer id="111" count="1" size="8,9" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate" destroy_on_close="true">
+	<item group="khelldonStarterCrateContents" count="1"/>
+</lootcontainer> 
+
+</append>
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Ends Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+</Khelldon>
