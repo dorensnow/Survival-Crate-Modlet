@@ -15,12 +15,8 @@ Khelldon - Let's add the random starter loot and the container info to call to i
 
 	<!-- Survival Crate groups -->
 <lootgroup name="Survival Shirts">
-	<item group="shirtLongAll" />
-	<item group="sweatshirtAll" />
-	<item group="hoodedSweatshirtAll" />
-	<item group="tankTopAll" />
-	<item group="tshirtAll" />
-	<item group="flannelShirtAll"/>
+	<item group="groupApparelShirtLong" />
+	<item group="groupApparelTankTopTShirt" />
 </lootgroup>
 
 <lootgroup name="Survival Bow" count="all">
@@ -51,10 +47,17 @@ Khelldon - Let's add the random starter loot and the container info to call to i
 </lootgroup>
    
 <lootgroup name="Survival Pants" >
-	<item group="pantsAll" prob=".3"/>
+	<item group="groupApparelPants" prob=".3"/>
 	<item name="plantFiberPants" prob=".7"/>
 </lootgroup>
 
+<lootgroup name="Armor" >
+	<item group="groupArmorT1_Light"/>
+	<item group="groupArmorT2_Light"/>
+	<item group="groupArmorT2_Light"/>
+	<item group="groupArmorT2_Light"/>
+</lootgroup>
+	
 <lootgroup name="Survival Vehicle">
 	<item name="ammoGasCan" count="25,100"/>
 	<item name="vehicleBicyclePlaceable" prob=".4"/>
@@ -66,11 +69,12 @@ Khelldon - Let's add the random starter loot and the container info to call to i
 	
 <!-- Our list of loot to give the player -->
 <lootgroup name="khelldonStarterCrateContents" count="all">
-	<item name="armorMiningHelmet" prob=".1"/>
+	<item name="modArmorHelmetLight" prob=".1"/>
 	<item group="weaponsMelee" count="1"/>
 	<item group="Survival Range" />
 	<item group="Survival Tools" count="1" />
-	<item group="hats" />
+	<item group="groupApparelHats" />
+	<item group="groupApparelFaceCover" />
 	<item group="Survival Shirts" />
 	<item group="Survival Pants" />
 	<item name="wornBoots" />
@@ -82,7 +86,7 @@ Khelldon - Let's add the random starter loot and the container info to call to i
 
 <!-- The loot id we need to call to get our loot group. 
 This may certainly cause conflicts with other mods. -->
-<lootcontainer id="111" count="1" size="8,9" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate" destroy_on_close="true">
+<lootcontainer id="150" count="1" size="8,9" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate" destroy_on_close="true">
 	<item group="khelldonStarterCrateContents" count="1"/>
 </lootcontainer> 
 
