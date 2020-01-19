@@ -36,7 +36,7 @@ Khelldon - Let's add the random starter loot and the container info to call to i
  
 <lootgroup name="Survival Pistol" count="all">
 	<item name="gunPistol" count="1" />
-	<item name="ammo9mmBullet" count="10,15" />
+	<item name="ammo9mmBulletBall" count="10,15" />
 </lootgroup>
  
 <lootgroup name="Survival Range" count="1">
