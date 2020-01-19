@@ -1,4 +1,4 @@
-Key,UsedInMainMenu,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
-khelldonStarterCrate,,blocks,Container,New,Starting Gear: Break This Open,,,,,
-khelldonStarterCrateDesc,,blocks,Container,New,"Your Starting gear. Place on the ground and break to open.",,,,,
-khelldonStarterCrateOpen,,blocks,Container,New,Starting Gear: Open This,,,,,
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+dorensStarterCrate,blocks,Container,New,Starting Gear: Break This Open,,,,,
+dorensStarterCrateDesc,blocks,Container,New,"Your Starting gear. Place on the ground and break to open.",,,,,
+dorensStarterCrateOpen,blocks,Container,New,Starting Gear: Open This,,,,,
