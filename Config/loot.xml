@@ -53,6 +53,22 @@ Khelldon - Let's add the random starter loot and the container info to call to i
 	<item name="meleeToolWrench" prob=".1"/>
 	<item group="empty" prob=".5"/>
 </lootgroup>
+
+<lootgroup name="Survival WeaponsMelee" >
+	<item name="meleeToolKnifeBone" prob=".2"/>
+	<item name="meleeToolKnifeIron" prob=".1"/>
+	<item name="meleeClubWood" prob=".2"/>
+	<item name="meleeClubIron" prob=".1"/>
+	<item name="meleeClubBaseballBat" prob=".1"/>
+	<item name="meleeThrownSpearStone" prob=".2"/>
+	<item name="meleeThrownSpearIron" prob=".1"/>
+	<item name="meleeToolSledgehammerStone" prob=".2"/>
+	<item name="meleeToolSledgehammerIron" prob=".1"/>
+	<item name="meleeKnucklesLeather" prob=".2"/>
+	<item name="meleeKnucklesIron" prob=".1"/>
+	<item name="meleeStunBaton" prob=".1"/>
+	<item group="empty" prob=".3"/>
+</lootgroup>
    
 <lootgroup name="Survival Pants" >
 	<item group="groupApparelPants" prob=".3"/>
@@ -80,14 +96,14 @@ Khelldon - Let's add the random starter loot and the container info to call to i
 <!-- Our list of loot to give the player -->
 <lootgroup name="khelldonStarterCrateContents" count="all">
 	<item name="modArmorHelmetLight" prob=".1"/>
-	<item group="weaponsMelee" count="1"/>
+	<item group="Survival WeaponsMelee" count="1"/>
 	<item group="Survival Range" />
 	<item group="Survival Tools" count="1" />
 	<item group="groupApparelHats" />
 	<item group="groupApparelFaceCover" />
 	<item group="Survival Shirts" />
 	<item group="Survival Pants" />
-	<item name="wornBoots" />
+	<item name="apparelWornBoots" />
 	<item group="Armor" count="4"/>
 	<item group="Survival Vehicle" />
 	<item group="airdropMedicine" count="2"/>
@@ -96,11 +112,9 @@ Khelldon - Let's add the random starter loot and the container info to call to i
 
 <!-- The loot id we need to call to get our loot group. 
 This may certainly cause conflicts with other mods. -->
-<lootcontainer id="150" count="1" size="8,9" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate" destroy_on_close="true">
+<lootcontainer id="150" count="1" size="8,9" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" destroy_on_close="true">
 	<item group="khelldonStarterCrateContents" count="1"/>
 </lootcontainer> 
-
-</append>
 
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
