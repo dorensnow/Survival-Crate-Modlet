@@ -20,10 +20,18 @@ Khelldon - Let's add the random starter loot and the container info to call to i
 </lootgroup>
 
 <lootgroup name="Survival Bow" count="all">
-	<item name="gunWoodenBow" prob="0.8" />
-	<item name="gunCompoundBow" prob="0.1" />
+	<item name="gunBowPrimitive" prob="0.7" />
+	<item name="gunBowWooden" prob="0.2" />
+	<item name="gunBowCompound" prob="0.1" />
 	<item name="ammoArrowStone" count="20,30" prob="0.5" />
 	<item name="ammoArrowIron" count="20,30" prob="0.1" />
+</lootgroup>
+ 
+ <lootgroup name="Survival CrossBow" count="all">
+	<item name="gunCrossbowIron" prob="0.7" />
+	<item name="gunCrossbowCompound" prob="0.2" />
+	<item name="ammoCrossbowBoltStone" count="20,30" prob="0.5" />
+	<item name="ammoCrossbowBoltIron" count="20,30" prob="0.1" />
 </lootgroup>
  
 <lootgroup name="Survival Pistol" count="all">
@@ -33,7 +41,7 @@ Khelldon - Let's add the random starter loot and the container info to call to i
  
 <lootgroup name="Survival Range" count="1">
 	<item group="Survival Pistol" prob="0.2" />
-	<item group="weaponsCrossbow+ammo" prob="0.3" />
+	<item group="Survival CrossBow" prob="0.3" />
 	<item group="Survival Bow" prob="0.5"/>
 </lootgroup>
 
@@ -52,10 +60,12 @@ Khelldon - Let's add the random starter loot and the container info to call to i
 </lootgroup>
 
 <lootgroup name="Armor" >
-	<item group="groupArmorT1_Light"/>
-	<item group="groupArmorT2_Light"/>
-	<item group="groupArmorT2_Light"/>
-	<item group="groupArmorT2_Light"/>
+	<item group="groupArmorT1_Light"  prob=".3"/>
+	<item group="groupArmorT2_Light" prob=".2"/>
+	<item group="groupArmorT3_Light" prob=".1"/>
+	<item group="groupArmorT1_Heavy" prob=".3"/>
+	<item group="groupArmorT2_Heavy" prob=".2"/>
+	<item group="groupArmorT3_Heavy" prob=".1"/>
 </lootgroup>
 	
 <lootgroup name="Survival Vehicle">
