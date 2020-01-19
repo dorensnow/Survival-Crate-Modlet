@@ -29,7 +29,7 @@ khelldonStarterCrateOpen,blocks,Container,New,Starting Gear: Open This,,,,,
 	<property name="MaxDamage" value="15"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
-	<property name="Model" value="Entities/LootContainers/crate_storePrefab" />
+	<property name="Model" value="#Entities/LootContainers?crate_storePrefab.prefab" />
 	<property name="DisplayInfo" value="Name"/>
 	<property name="Material" value="Mwood_regular"/>
 	<drop event="Destroy" count="0"/>
