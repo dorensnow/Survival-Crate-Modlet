@@ -56,7 +56,7 @@ Khelldon - Let's add the random starter loot and the container info to call to i
    
 <lootgroup name="Survival Pants" >
 	<item group="groupApparelPants" prob=".3"/>
-	<item name="plantFiberPants" prob=".7"/>
+	<item name="apparelPlantFiberPants" prob=".7"/>
 </lootgroup>
 
 <lootgroup name="Armor" >
